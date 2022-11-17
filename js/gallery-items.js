@@ -63,20 +63,3 @@ export const galleryItems = [
     description: "Lighthouse Coast Sea",
   },
 ];
-// export const galleryItems = [
-//   {
-//     preview: "./gallery-desk-3.jpg",
-//     original: 2"./gallery-desk-3.jpg",
-//     description: "Hokkaido Flower",
-//   },
-//   {
-//     preview: "./gallery-desk-3.jpg",
-//     original: "./gallery-desk-3.jpg",
-//     description: "Container Haulage Freight",
-//   },
-//   {
-//     preview: "./gallery-desk-3.jpg",
-//     original: "./gallery-desk-3.jpg",
-//     description: "Aerial Beach View",
-//   },
-// ];
