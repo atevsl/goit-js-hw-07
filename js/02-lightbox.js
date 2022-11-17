@@ -12,7 +12,7 @@ function creatGalleryMarkup(galleryItems) {
     .map(({ preview, original, description }) => {
       return `<li>
          <a class="gallery__item" href="${original}">
-  <img class="gallery__image" src="${preview}" alt="${description}" title="${description}" />
+  <img class="gallery__image" src="${preview}" alt="${description}" />
 </a>
        </li>`;
     })
@@ -23,11 +23,9 @@ galleryEl.addEventListener("click", onModalOpen);
 
 function onModalOpen(e) {
   e.preventDefault();
-  // console.log(e.target);
 
-  let gallery = new SimpleLightbox(".gallery a");
-  // gallery.on("shown.simplelightbox", function () {
-
-  //  gallery.captionDelay= 250ms;
-  // });
+  const lightbox = new SimpleLightbox(".gallery__item", {
+    captionsData: "alt",
+    captionDelay: 250,
+  });
 }
