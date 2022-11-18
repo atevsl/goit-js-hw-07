@@ -18,14 +18,7 @@ function creatGalleryMarkup(galleryItems) {
     })
     .join("");
 }
-
-galleryEl.addEventListener("click", onModalOpen);
-
-function onModalOpen(e) {
-  e.preventDefault();
-
-  const lightbox = new SimpleLightbox(".gallery__item", {
-    captionsData: "alt",
-    captionDelay: 250,
-  });
-}
+const lightbox = new SimpleLightbox(".gallery__item", {
+  captionsData: "alt",
+  captionDelay: 250,
+});

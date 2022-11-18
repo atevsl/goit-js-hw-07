@@ -39,13 +39,11 @@ function openImgModal(event) {
     </div>
 `,
     {
-      onShow: (instance) => {
-        instance.element().querySelector("a").onclick = instance.close;
-        instance.element().querySelector("img").onclick = instance.close;
-        window.addEventListener("keyup", onEscClose);
+      onShow: () => {
+        document.addEventListener("keyup", onEscClose);
       },
       onClose: () => {
-        window.removeEventListener("keyup", onEscClose);
+        document.removeEventListener("keyup", onEscClose);
       },
     }
   );
